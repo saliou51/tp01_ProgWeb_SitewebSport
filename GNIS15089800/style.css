@@ -1,0 +1,307 @@
+/* Style général pour la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('Image/Barca.jpg');
+    background-size: cover;
+}
+
+/* Style pour les en-têtes, le texte centré, et les couleurs principales */
+header, footer {
+    background-color: #003c71; /* Couleur sombre commune */
+    color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #760e02;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo img {
+    width: 170px;
+}
+
+/* Styles communs pour les sections */
+section {
+    padding: 40px;
+    background-color: #dfd7d7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align:left;
+}
+
+h1, h2, h3 {
+    color: #A50034; /* Couleur des titres */
+    text-transform: uppercase;
+    text-align:left;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+#accueil {
+    box-sizing: border-box;
+    background:transparent
+   
+}
+
+/* Styles spécifiques aux sections */
+#presentation, #historique {
+    text-align: left;
+}
+
+#video-presentation video, #video-presentation img, .historique-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.historique-image:hover, .evenements-avenir-image:hover, .evenements-recents-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Textes et paragraphes */
+p, ul, ol {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+#presentation p, #historique p, #video-presentation p {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles des tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #f9f9f9;
+}
+
+th {
+    background-color: #0033cc;
+    color: #f9f9f9;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styles spécifiques pour les événements */
+#evenements-avenir ul li, #evenements-recents ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#evenements-avenir a, #evenements-recents a {
+    color: #A50034;
+    text-decoration: underline;
+}
+
+#evenements-avenir p img, #evenements-recents p img {
+    width: 300px;
+    height: auto;
+    margin-left: 70px;
+}
+
+/* Style de la barre latérale */
+.sidebar {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 225px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #d32f2f;
+    color: #f9f9f9;
+}
+
+/* S'assurer que les images ne débordent pas de leur conteneur */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Style pour la section fan club */
+#fanclub {
+    padding: 40px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    max-width: 800px; /* Largeur maximale */
+    margin: 20px auto; /* Centrer la section */
+}
+
+/* Style pour les titres de la section */
+#fanclub h1 {
+    color: #A50034; /* Couleur de texte */
+    font-size: 2em; /* Taille de la police */
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+/* Style pour le texte d'introduction */
+#fanclub p {
+    text-align:left;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555; /* Couleur du texte */
+}
+
+/* Style général pour les champs du formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Met le label au-dessus de l'input */
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #003c71; /* Couleur des labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    width: 100%; /* Champ prend toute la largeur */
+    padding: 10px;
+    font-size: 1em;
+    /*border: 1px solid #ccc;  Bordure grise claire */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Assure que padding et largeur fonctionnent bien */
+    transition: border-color 0.3s ease; /* Effet lors du focus */
+}
+
+/* Effet au focus des champs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+    border-color: #003c71; /* Change la couleur de la bordure au focus */
+    outline: none; /* Supprime l'effet par défaut du focus */
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #A50034; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en mode clic */
+    transition: background-color 0.3s ease; /* Effet au survol */
+    width: 100%; /* Prend toute la largeur */
+    box-sizing: border-box;
+}
+.interest-options {
+    display: flex;
+    flex-direction: column; /* Dispose les éléments verticalement */
+    gap: 10px; /* Espace entre chaque option */
+}
+
+.interest-options div {
+    display: flex;
+    align-items:center; /* Aligne le bouton radio et le label au centre verticalement */
+}
+
+.interest-options input[type="radio"] {
+    margin-right: 10px; /* Espace entre le bouton radio et le label */
+}
+
+/* Effet au survol du bouton */
+input[type="submit"]:hover {
+    background-color: #003c71; /* Couleur au survol */
+}
